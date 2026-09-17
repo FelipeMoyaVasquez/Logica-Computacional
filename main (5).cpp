@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double longitud;
+    double anchura;
+    
+    cout << fixed << setprecision(4);
+    
+    cout << "Escribe la longitud de la habitacion: ";
+    cin >> longitud;
+    
+    cout << "Escribe la anchura de la habitacion: ";
+    cin >> anchura;
+    
+    cout << "La superficie dela habitacion es: " << longitud * anchura;
+    
+    
+
+    return 0;
+}

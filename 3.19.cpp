@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int anyo;
+    
+    cout << "Digite el anyo: ";
+    cin >> anyo;
+    
+    int a = anyo % 19;
+    int b = anyo % 4;
+    int c = anyo % 7;
+    int d = ((19 * a + 24) % 30);
+    int e = ((2*b + 4*c + 6*d + 5) % 7);
+    int n = (22 + d + e);
+    
+    
+    
+    if (n <= 31){
+        
+        cout << "En el anyo " << anyo << " el domingo de Pascua es el " << n  << " de marzo.";
+        
+    }
+    else{
+        
+       int dia_abril = n - 31;
+       cout << "En el anyo " << anyo << " el domingo de Pascua es el " << dia_abril << " de abril.";
+        
+    }
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double decimal1;
+    double decimal2;
+    
+    cout << "Escribe el decimal 1: ";
+    cin >> decimal1;
+    
+    cout << "Escribe el decimal 2: ";
+    cin >> decimal2;
+    
+    cout << "El numero 1 es: " << decimal1 << endl;
+    cout << "El numero 2 es: " << decimal2 << endl;
+    cout << "El resultado de la suma es: " << decimal1 << " + " << decimal2 << " = "<< decimal1 + decimal2;
+
+    return 0;
+}
